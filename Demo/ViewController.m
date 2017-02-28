@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NetworkManager.h"
+#import "Planet.h"
 
 @interface ViewController ()
 
@@ -17,12 +19,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)doSomething:(UIButton *)sender {
+    NetworkManager *networkManager = [[NetworkManager alloc] init];
+    
+    [networkManager getPlanets:^(NSArray *planets, NSError * _Nullable error) {
+        
+        for (Planet *planet in planets) {
+            // Create a planet object
+            NSLog(@"Name: %@", planet.name);
+        }
+    }];
 }
 
 

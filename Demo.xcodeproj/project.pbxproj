@@ -14,6 +14,8 @@
 		222EF0EA1E649E3200777FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222EF0E91E649E3200777FAD /* Assets.xcassets */; };
 		222EF0ED1E649E3200777FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222EF0EB1E649E3200777FAD /* LaunchScreen.storyboard */; };
 		222EF0F81E649E3200777FAD /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 222EF0F71E649E3200777FAD /* DemoTests.m */; };
+		222EF1041E64F91700777FAD /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 222EF1031E64F91700777FAD /* NetworkManager.m */; };
+		222EF1091E64FB2100777FAD /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 222EF1081E64FB2100777FAD /* Planet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		222EF0F31E649E3200777FAD /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		222EF0F71E649E3200777FAD /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
 		222EF0F91E649E3200777FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222EF1021E64F91700777FAD /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		222EF1031E64F91700777FAD /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		222EF1071E64FB2100777FAD /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
+		222EF1081E64FB2100777FAD /* Planet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 				222EF0E11E649E3200777FAD /* AppDelegate.m */,
 				222EF0E31E649E3200777FAD /* ViewController.h */,
 				222EF0E41E649E3200777FAD /* ViewController.m */,
+				222EF1061E64FB1600777FAD /* managers */,
+				222EF1051E64FB1200777FAD /* models */,
 				222EF0E61E649E3200777FAD /* Main.storyboard */,
 				222EF0E91E649E3200777FAD /* Assets.xcassets */,
 				222EF0EB1E649E3200777FAD /* LaunchScreen.storyboard */,
@@ -109,6 +117,24 @@
 				222EF0F91E649E3200777FAD /* Info.plist */,
 			);
 			path = DemoTests;
+			sourceTree = "<group>";
+		};
+		222EF1051E64FB1200777FAD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				222EF1071E64FB2100777FAD /* Planet.h */,
+				222EF1081E64FB2100777FAD /* Planet.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		222EF1061E64FB1600777FAD /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				222EF1021E64F91700777FAD /* NetworkManager.h */,
+				222EF1031E64F91700777FAD /* NetworkManager.m */,
+			);
+			name = managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +241,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222EF1091E64FB2100777FAD /* Planet.m in Sources */,
+				222EF1041E64F91700777FAD /* NetworkManager.m in Sources */,
 				222EF0E51E649E3200777FAD /* ViewController.m in Sources */,
 				222EF0E21E649E3200777FAD /* AppDelegate.m in Sources */,
 				222EF0DF1E649E3200777FAD /* main.m in Sources */,
@@ -416,6 +444,7 @@
 				222EF0FE1E649E3200777FAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		222EF0FF1E649E3200777FAD /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +453,7 @@
 				222EF1011E649E3200777FAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
